@@ -1,0 +1,86 @@
+:root {
+    --font-main: 'JetBrains Mono', sans-serif;
+    --txt-color: #000;
+    --bg-color: #efefef;
+}
+#contact {
+    margin-top: 40px;
+}
+
+.contact-box {
+    width: 90%;
+    height: 500px;
+    background-color: var(--bg-color);
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom-left-radius: 24px;
+    overflow: hidden;
+}
+
+.contact-box input {
+    width: 500px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-family: var(--font-main);
+}
+
+.contact-box input::placeholder {
+    font-family: var(--font-main);
+    color: #000;
+}
+
+.contact-box textarea {
+    width: 500px;
+    height: 200px;
+    outline: none;
+    font-family: var(--font-main);
+    border: none;
+}
+
+.contact-box button {
+    width: 500px;
+    height: 40px;
+    background-color: var(--txt-color);
+    border: 2px solid var(--txt-color);
+    color: #fff;
+    font-family: var(--font-main);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background-color: var(--bg-color);
+    color: #000;
+    transition: .2s;
+}
+
+.contact-box h1 {
+    font-family: var(--font-main);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        width: 95%;
+    }
+    .contact-box h1 {
+        padding: 10px;
+    }
+
+    .contact-box input {
+        width: 300px;
+        transform: translateX(00px);
+    }
+    .contact-box textarea {
+        width: 300px;
+        transform: translateX(0px);
+    }
+    .contact-box button {
+        width: 300px;
+        transform: translateX(0px);
+    }
+}
